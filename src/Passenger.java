@@ -5,14 +5,14 @@ package flight;
 
 public class Passenger {
     //define variables
-    String name;
-    String age;
-    String country;
+    String _name;
+    String _age;
+    String _country;
     
     //create constructors
-    public Passenger(String myName, String myAge, String myCountry){
-        name = myName;
-        age = myAge;
-        country = myCountry;
+    public Passenger(String name, String age, String country){
+        _name = name;
+        _age = age;
+        _country = country;
     }
 }
