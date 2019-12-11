@@ -10,23 +10,23 @@ import java.util.ArrayList;
 //define the class
 public class Plane {
     //define the variables
-    String ID;
-    Point departLoc;
-    long departTime;
-    Point arriveLoc;
-    long arriveTime;
-    Passenger[] passengerArray;
-    int[] seatingBooked;
+    String _ID;
+    long _depTime;
+    long _arrTime;
+    Point _depLoc;
+    Point _arrLoc;
+    Passenger[] _passengerArray;
+    int[] _seatingBooked;
     
     //create the contructor
-    public Plane(String myID, Point mydepartLoc, long mydepartTime, Point myarriveLoc, long myarriveTime, Passenger[] myPassengerArray, int[] mySeatingBooked){
-        ID = myID;
-        departLoc = mydepartLoc;
-        departTime = mydepartTime;
-        arriveLoc = myarriveLoc;
-        arriveTime = myarriveTime;
-        passengerArray = myPassengerArray;
-        seatingBooked = mySeatingBooked;
+    public Plane(String ID, Point depLoc, long depTime, Point arrLoc, long arrTime, Passenger[] passengerArray, int[] seatingBooked){
+        _ID = ID;
+        _depLoc = depLoc;
+        _deTime = depTime;
+        _arrLoc = arrLoc;
+        _arrTime = arrTime;
+        _passengerArray = passengerArray;
+        _seatingBooked = seatingBooked;
     }
     
     public void setPassengerArray(Passenger[] passengers){ //this method changes the passengerArray
